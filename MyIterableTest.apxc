@@ -1,0 +1,23 @@
+@IsTest
+public class MyIterableTest {
+		@IsTest
+    		static void testIterableForLoop()
+
+  //create a list of strings to be used in the MyIterable class 
+            {
+                List<String> strings = new List<String>
+ 
+                {
+                    'Hello', 'World'
+                };
+//Instantiate the MyIterable class with the list of Strings
+         MyIterable iterable = new MyIterable(strings);
+
+//Iterate ove the for loop MyInstance using a for-loop
+                for(String str : iterable)
+  //log each string to the debug window
+                {
+                    system.debug(str);
+                }
+            }
+}
