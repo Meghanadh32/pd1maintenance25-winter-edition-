@@ -1,0 +1,18 @@
+public class MyIterable implements Iterable<String>{
+    
+    private List<String> strings;
+  
+// Constructor to initialize the MyIterable with a list of Strings  
+    public MyIterable(List<String> strings)
+    {
+//'this.strings' refers to instance variable to the class
+        this.strings = strings;
+    }
+//implementation of Iterator for the strings
+    public Iterator<String> iterator()
+    {
+//return the strings with iterator
+        return strings.iterator();
+    }
+
+}
